@@ -30,20 +30,23 @@ Example:
              grupos = kmeans.calculate()
              
              grupos ->
-                        [[0 0]
+                       [[0 0]
                         [1 0]
                         [2 0]  
                         [3 1]
                         [4 1]
                         [5 1]
                         [6 1]]
+                        
              calculate() retorna una matriz donde la columna 0 es el numero del vector y la
              columna 1 es el cluster asociado a dicho vector.
              
              Para obtener los clusters finales: get_cluster()
                         
-             [[ 1.33333333  1.66666667]
-              [ 4.          3.75      ]]
+             cluster 0 -> [[ 1.33333333  1.66666667]
+             cluster 1 ->  [ 4.          3.75      ]]
+              
+              
              
              
 
