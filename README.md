@@ -25,9 +25,25 @@ Example:
         
          import k_means
          
-             data =  
+             data = np.array([[1, 1], [2, 1], [1, 3], [3, 3], [4, 5], [4, 4], [5, 3]])
              kmeans = k_means.k_means(data)
-             kmeans.calculate()
+             grupos = kmeans.calculate()
+             
+             grupos ->
+                        [[0 0]
+                        [1 0]
+                        [2 0]  
+                        [3 1]
+                        [4 1]
+                        [5 1]
+                        [6 1]]
+             calculate() retorna una matriz donde la columna 0 es el numero del vector y la
+             columna 1 es el cluster asociado a dicho vector.
+             
+             Para obtener los clusters finales: get_cluster()
+                        
+             [[ 1.33333333  1.66666667]
+              [ 4.          3.75      ]]
              
              
 
